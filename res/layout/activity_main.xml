@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.example.planegame_sv.MySurfaceView
+        android:id="@+id/surfaceView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+	<Button
+	    android:id="@+id/btnDown"
+	    android:background="@drawable/shape_oval_yellow"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/btnUp"
+	    android:layout_alignParentBottom="true"
+	    android:textSize="40sp" />
+
+	<Button
+		android:id="@+id/btnRight"
+		android:background="@drawable/shape_oval_blue"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/btnLeft"
+	    android:layout_alignBottom="@+id/btnLeft"
+	    android:layout_alignParentRight="true"
+	    android:textSize="40sp" />
+    
+    <Button
+        android:id="@+id/btnUp"
+        android:background="@drawable/shape_oval_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLeft"
+        android:layout_toLeftOf="@+id/btnRight"
+        android:textSize="40sp" />
+
+	<Button
+		android:id="@+id/btnLeft"
+		android:background="@drawable/shape_oval_green"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/btnDown"
+	    android:layout_toLeftOf="@+id/btnUp"
+	    android:textSize="40sp" />
+	
+</RelativeLayout>
